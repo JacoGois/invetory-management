@@ -5,6 +5,8 @@ import { useDisclosure } from '@chakra-ui/react'
 import { ButtonAction } from '../../components/Table/ButtonAction'
 import { BsFillPencilFill } from 'react-icons/bs'
 import { useState } from 'react'
+import { TextField } from '../../components/Fields/TextField'
+import { Toggle } from '../../components/Toggle'
 
 export const Products = () => {
   const data = [
