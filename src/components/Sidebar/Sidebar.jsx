@@ -5,6 +5,7 @@ import { NavItem } from './components/NavItem';
 import { ButtonOpenCloseSidebar, LogoSidebar } from './components';
 import { routes } from './routesSidebar'
 import { useViewport } from '../../hooks';
+import { Tooltip } from '@chakra-ui/react';
 
 export const Sidebar = () => {
   const [ isOpen, setIsOpen ] = useState(true)

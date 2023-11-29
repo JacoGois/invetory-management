@@ -28,11 +28,11 @@ export const Button = ({
   return (
     <motion.button 
       whileTap={{ scale: 0.9 }}
-      type={type} 
       className={buttonClasses} 
       onClick={onClick} 
       disabled={isDisabled} 
       {...rest}
+      type={type} 
     >
       {!isLoading && iconLeft}
       {isLoading && <Spinner />}

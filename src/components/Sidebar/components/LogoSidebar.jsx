@@ -20,7 +20,7 @@ export const LogoSidebar = ({ isOpen }) => {
       onClick={() => navigate('/')}
     >
       <div className='flex whitespace-pre items-center gap-1 font-semibold text-base cursor-pointer'>
-        <img src='/images/firebase.png' width={60} />
+        <img src='/images/logo.png' width={50} />
         <AnimatePresence>
           {isOpen && (
             <motion.div
@@ -28,9 +28,9 @@ export const LogoSidebar = ({ isOpen }) => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="text-blue-200"
+              className="text-blue-200 ml-2"
             >
-              Admin FireCrypto
+              IM3D
             </motion.div>
           )}
         </AnimatePresence>

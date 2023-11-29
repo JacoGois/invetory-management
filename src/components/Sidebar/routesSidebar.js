@@ -1,10 +1,13 @@
-import { AiOutlineCreditCard } from "react-icons/ai";
-import { BiHomeAlt } from "react-icons/bi";
-// import { GoPerson } from "react-icons/go";
+import { FaTooth, FaMoneyBillWave } from "react-icons/fa";
+import { BsFillPeopleFill } from "react-icons/bs";
+import { AiFillExperiment, AiFillFileText } from "react-icons/ai";
+
 
 
 export const routes = [
- { name: 'Dashboard' , path: '/', icon: BiHomeAlt},
- { name: 'Financial' , path: '/financial', icon: AiOutlineCreditCard},
- // { name: 'Profile' , path: '/profile', icon: GoPerson},
+ { name: 'Produtos' , path: '/products', icon: FaTooth},
+ { name: 'Alunos', path: '/students', icon: BsFillPeopleFill},
+ { name: 'Laboratórios', path: '/laboratories', icon: AiFillExperiment},
+ { name: 'Pedidos', path: '/solicitation', icon: AiFillFileText},
+ { name: 'Financeiro', path: '/financial', icon: FaMoneyBillWave},
 ]

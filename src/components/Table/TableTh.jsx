@@ -2,9 +2,9 @@ import { Th } from '@chakra-ui/react'
 import PropTypes from 'prop-types'
 import { twMerge } from 'tailwind-merge'
 
-export const TableTh = ({ text, classNameTh, classNameText, textAlign, expansiveTh }) => (
+export const TableTh = ({ text, classNameTh, classNameText, textAlign, expansiveTh, children }) => (
   <Th textAlign={textAlign === '' ? 'start' : textAlign} className={twMerge(classNameTh, expansiveTh && 'w-full')}>
-    <p className={classNameText}>{text}</p>
+    <p className={classNameText}>{text || children}</p>
   </Th>
 )
 

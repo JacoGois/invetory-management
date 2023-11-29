@@ -5,9 +5,19 @@ export const animationClick = {
   }
 }
 
+export const opacityVariant = {
+  visible: {
+    opacity: 1,
+    transition: { duration: 1 },
+  },
+  hidden: {
+    opacity: 0,
+  },
+}
+
 export const animationHoverClick = {
   hover: {
-    scale: 1.3,
+    scale: 1.2,
     transition: { duration: 0.5 },
   },
   click : { scale: 0.9 }

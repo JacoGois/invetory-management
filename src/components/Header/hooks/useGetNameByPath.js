@@ -1,14 +1,10 @@
 export const useGetNameByPath = (path) => {
   switch (path) {
-    case '':
-      return 'Dashboard'
-    case 'dashboard':
-      return 'Dashboard'
-    case 'store':
-      return 'Store'
+    case 'products':
+      return 'Produtos'
     case 'financial':
-      return 'Financial'
-    case 'profile':
-      return 'Profile'
+      return 'Financeiro'
+    case 'students':
+      return 'Alunos'
   }
 }
