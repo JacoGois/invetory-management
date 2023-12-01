@@ -18,7 +18,7 @@ export const Graphics = () => {
   const categories = [];
   const seriesData = [];
 
-  for (let i = 1; i <= 12; i++) {
+  for (let i = 1; i <= 11; i++) {
     const date = new Date(); 
     date.setDate(date.getDate() + i);
     const formattedDate = `${date.getDate()} ${date.toLocaleString('default', { month: 'short' })}`;
@@ -29,8 +29,6 @@ export const Graphics = () => {
 
   return { categories, seriesData };
 };
-
-
 
  const [chartOption, setchartOption] = useState(
   {

@@ -15,7 +15,8 @@ export const FilterTable = ({
     valueInput,
     onChangeInput,
     filters,
-    borderB = true
+    borderB = true,
+    label
   }) => {
  const [expanded, setExpanded] = useState(false);
  const { isOpen, onClose, onOpen } = useDisclosure()
@@ -36,7 +37,7 @@ export const FilterTable = ({
        className={`p-4 bg-surface flex items-center w-full justify-between ${borderB && 'border-b'} shadow-md`}
      >
        <div className='flex items-center gap-4'>
-         <Icon label='Adicionar Produto'>
+         <Icon label={label}>
           <span className='h-8 w-8 border border-green-500 rounded-full bg-green-200/60 flex items-center justify-center' onClick={handleClickAdd}>
             <AiOutlinePlus className='text-green-500' size={16} />
           </span>

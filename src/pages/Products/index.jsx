@@ -135,6 +135,7 @@ export const Products = () => {
     <main>
       <ModalProducts isOpen={isOpen} onClose={onClose} productId={productId} />
       <FilterTable 
+        label='Adicionar Produto'
         handleClickAdd={handleOpenModalAddProduct} 
         placeholderInput='Digite o nome do Produto...' 
         filters={
