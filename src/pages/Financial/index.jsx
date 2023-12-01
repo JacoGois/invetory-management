@@ -51,7 +51,7 @@ export const Financial = () => {
       <FilterTable
         borderB={false} 
         handleClickAdd={handleOpenModalAddData} 
-        placeholderInput='Digite o nome do Aluno...' 
+        placeholderInput='Digite o número...' 
         filters={
           <div>
             oi

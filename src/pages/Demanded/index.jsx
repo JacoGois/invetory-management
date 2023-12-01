@@ -37,7 +37,7 @@ export const Demanded = () => {
       <ModalDemanded isOpen={isOpen} onClose={onClose} demandedId={demandedId} />
       <FilterTable 
         handleClickAdd={handleOpenModalAddDemanded} 
-        placeholderInput='Digite o nome do Laboratorio...' 
+        placeholderInput='Digite o número do Pedido...' 
         filters={
           <div>
             oi
