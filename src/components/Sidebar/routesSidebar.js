@@ -8,6 +8,6 @@ export const routes = [
  { name: 'Produtos' , path: '/products', icon: FaTooth},
  { name: 'Alunos', path: '/students', icon: BsFillPeopleFill},
  { name: 'Laboratórios', path: '/laboratories', icon: AiFillExperiment},
- { name: 'Pedidos', path: '/solicitation', icon: AiFillFileText},
+ { name: 'Pedidos', path: '/demanded', icon: AiFillFileText},
  { name: 'Financeiro', path: '/financial', icon: FaMoneyBillWave},
 ]

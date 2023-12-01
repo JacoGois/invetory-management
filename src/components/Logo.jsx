@@ -12,6 +12,6 @@ Logo.propTypes = {
 }
 
 Logo.defaultProps = {
-  src: '/images/logo.png',
+  src: 'https://img.freepik.com/icones-gratis/dente_318-776809.jpg',
   alt: 'Company Logo',
 }

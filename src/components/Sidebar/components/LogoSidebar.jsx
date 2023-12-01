@@ -20,7 +20,7 @@ export const LogoSidebar = ({ isOpen }) => {
       onClick={() => navigate('/')}
     >
       <div className='flex whitespace-pre items-center gap-1 font-semibold text-base cursor-pointer'>
-        <img src='/images/logo.png' width={50} />
+        <img src='https://img.freepik.com/icones-gratis/dente_318-776809.jpg' width={50} />
         <AnimatePresence>
           {isOpen && (
             <motion.div
@@ -30,7 +30,7 @@ export const LogoSidebar = ({ isOpen }) => {
               exit="hidden"
               className="text-blue-200 ml-2"
             >
-              IM3D
+              Software
             </motion.div>
           )}
         </AnimatePresence>

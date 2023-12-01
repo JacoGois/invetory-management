@@ -149,22 +149,22 @@ export const Students = () => {
         <Table.Th textAlign='center'>Ações</Table.Th>
       </Table.Thead>
       <Table.Tbody colSpan={7} data={data}>
-        {data.map((product) => (
+        {data.map((student) => (
           <Table.Tr>
-            <Table.Td>{product.registration}</Table.Td>
-            <Table.Td>{product.name}</Table.Td>
-            <Table.Td>{product.birthDate}</Table.Td>
-            <Table.Td>{product.cpf}</Table.Td>
-            <Table.Td textAlign='center'>{product.email}</Table.Td>
-            <Table.Td textAlign='center'>{product.phone}</Table.Td>
-            <Table.Td textAlign='center'>{product.institution}</Table.Td>
+            <Table.Td>{student.registration}</Table.Td>
+            <Table.Td>{student.name}</Table.Td>
+            <Table.Td>{student.birthDate}</Table.Td>
+            <Table.Td>{student.cpf}</Table.Td>
+            <Table.Td textAlign='center'>{student.email}</Table.Td>
+            <Table.Td textAlign='center'>{student.phone}</Table.Td>
+            <Table.Td textAlign='center'>{student.institution}</Table.Td>
             <Table.Td 
               textAlign='center' 
               text={
                 <ButtonAction
                   icon={<BsFillPencilFill size={14} />}
                   labelTooltip='Editar Produto'
-                  onClick={() => handleOpenModalEditStudent(product.code)}
+                  onClick={() => handleOpenModalEditStudent(student.code)}
                 />
               }
             />

@@ -6,5 +6,9 @@ export const useGetNameByPath = (path) => {
       return 'Financeiro'
     case 'students':
       return 'Alunos'
+    case 'laboratories':
+      return 'Laboratórios'
+    case 'demanded':
+      return 'Pedidos'
   }
 }
