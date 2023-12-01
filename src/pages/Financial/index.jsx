@@ -71,7 +71,7 @@ export const Financial = () => {
           <Table.Tr>
             <Table.Td>{data.number}</Table.Td>
             <Table.Td>{data.description}</Table.Td>
-            <Table.Td textAlign='right'>{formatCurrency(data.value)}</Table.Td>
+            <Table.Td textAlign='right'><span className='font-semibold'>{formatCurrency(data.value)}</span></Table.Td>
             <Table.Td textAlign='center'>
               <Tag colorScheme={data.type === "Despesa" ? "red" : 'green'}>{data.type}</Tag>
             </Table.Td>
