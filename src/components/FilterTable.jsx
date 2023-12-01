@@ -14,7 +14,8 @@ export const FilterTable = ({
     placeholderInput,
     valueInput,
     onChangeInput,
-    filters
+    filters,
+    borderB = true
   }) => {
  const [expanded, setExpanded] = useState(false);
  const { isOpen, onClose, onOpen } = useDisclosure()
@@ -32,7 +33,7 @@ export const FilterTable = ({
        variants={opacityVariant}
        initial='hidden'
        animate='visible'
-       className='p-4 bg-surface flex items-center w-full justify-between border-b shadow-md'
+       className={`p-4 bg-surface flex items-center w-full justify-between ${borderB && 'border-b'} shadow-md`}
      >
        <div className='flex items-center gap-4'>
          <Icon label='Adicionar Produto'>
