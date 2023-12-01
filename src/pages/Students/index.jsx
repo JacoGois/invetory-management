@@ -163,7 +163,7 @@ export const Students = () => {
               text={
                 <ButtonAction
                   icon={<BsFillPencilFill size={14} />}
-                  labelTooltip='Editar Produto'
+                  labelTooltip='Editar Aluno'
                   onClick={() => handleOpenModalEditStudent(student.code)}
                 />
               }

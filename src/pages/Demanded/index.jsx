@@ -60,7 +60,7 @@ export const Demanded = () => {
               text={
                 <ButtonAction
                   icon={<BsFillPencilFill size={14} />}
-                  labelTooltip='Editar Produto'
+                  labelTooltip='Editar Pedido'
                   onClick={() => handleOpenModalEditDemanded(demanded.code)}
                 />
               }

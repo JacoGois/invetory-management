@@ -60,7 +60,7 @@ export const Laboratory = () => {
               text={
                 <ButtonAction
                   icon={<BsFillPencilFill size={14} />}
-                  labelTooltip='Editar Produto'
+                  labelTooltip='Editar Laboratório'
                   onClick={() => handleOpenModalEditLaboratory(laboratory.code)}
                 />
               }
