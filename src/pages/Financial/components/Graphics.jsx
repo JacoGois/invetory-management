@@ -10,6 +10,8 @@ import { useState } from 'react'
 import Chart from 'react-apexcharts'
 import { BsGraphUp } from 'react-icons/bs';
 import { formatCurrency } from '../../../utils/stringHelpers';
+import { opacityVariant } from '../../../animations';
+import { motion } from 'framer-motion'
 
 export const Graphics = () => {
  const generateChartData = () => {
@@ -78,20 +80,22 @@ export const Graphics = () => {
    }})
 
   return (
-   <Accordion className='bg-surface' allowMultiple>
-     <AccordionItem>
-       <h2>
-         <AccordionButton>
-           <Box as="span" flex='1' textAlign='left' className='flex items-center gap-2 font-bold opacity-90'>
-             <BsGraphUp />  Gráfico
-           </Box>
-           <AccordionIcon />
-         </AccordionButton>
-       </h2>
-       <AccordionPanel pb={4}>
-         <Chart options={chartOption.options} series={chartOption.series} type="area" height={350} />
-       </AccordionPanel>
-     </AccordionItem>
-   </Accordion>
+   <motion.div variants={opacityVariant} initial='hidden' animate='visible'>
+     <Accordion className='bg-surface' allowMultiple>
+       <AccordionItem>
+         <h2>
+           <AccordionButton>
+             <Box as="span" flex='1' textAlign='left' className='flex items-center gap-2 font-bold opacity-90 px-2'>
+               <BsGraphUp />  Gráfico
+             </Box>
+             <AccordionIcon />
+           </AccordionButton>
+         </h2>
+         <AccordionPanel pb={4}>
+           <Chart options={chartOption.options} series={chartOption.series} type="area" height={350} />
+         </AccordionPanel>
+       </AccordionItem>
+     </Accordion>
+   </motion.div>
   )
 }

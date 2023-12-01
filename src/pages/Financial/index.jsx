@@ -1,7 +1,7 @@
 import { Table } from '../../components/Table/Table'
 import { FilterTable } from '../../components/FilterTable'
 import { Graphics, ModalFinancial, ResumeFinancial } from './components'
-import { useDisclosure } from '@chakra-ui/react'
+import { useDisclosure, Tag } from '@chakra-ui/react'
 import { useState } from 'react'
 import { formatCurrency } from '../../utils/stringHelpers'
 
@@ -72,7 +72,9 @@ export const Financial = () => {
             <Table.Td>{data.number}</Table.Td>
             <Table.Td>{data.description}</Table.Td>
             <Table.Td textAlign='right'>{formatCurrency(data.value)}</Table.Td>
-            <Table.Td textAlign='center'>{data.type}</Table.Td>
+            <Table.Td textAlign='center'>
+              <Tag colorScheme={data.type === "Despesa" ? "red" : 'green'}>{data.type}</Tag>
+            </Table.Td>
         </Table.Tr>
         ))}
       </Table.Tbody>
