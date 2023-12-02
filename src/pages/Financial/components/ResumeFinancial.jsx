@@ -15,7 +15,7 @@ export const ResumeFinancial = () => {
       variants={cardListVariant}
       animate='visible' 
       initial='hidden'
-      className='p-3 flex items-center justify-between gap-4 md:gap-8'
+      className='p-3 flex items-center justify-between gap-4 md:gap-8 md:flex-row flex-col'
     >
         <motion.div variants={cardItemVariant} className='w-full'>
           <Stat className='flex items-center px-3 py-2 border shadow-md bg-surface rounded-lg'>

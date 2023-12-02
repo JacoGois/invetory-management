@@ -67,7 +67,7 @@ export const FilterTable = ({
            <BsArrowClockwise size={18} />
          </Icon>
        </div>
-       <div className='flex items-center gap-4'>
+       <div className='hidden sm:flex items-center gap-4'>
         <p>1 - 200 of 500</p>
         <div className='flex items-center gap-2'>
         <Icon>
